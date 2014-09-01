@@ -1,23 +1,23 @@
 //
-//  FKSlideShowView.m
+//  YCSlideShowView.m
 //  YU - YUPPIU
 //
 //  Created by Fabio Knoedt on 11/08/14.
 //  Copyright (c) 2014 Datedicted. All rights reserved.
 //
 
-#import "FKSlideShowImageView.h"
+#import "YCSlideShowImageView.h"
 
 #define animationDuration 1.0f
 #define animationDelay 2.5f
 
-@interface FKSlideShowImageView ()
+@interface YCSlideShowImageView ()
 
 @property (atomic, retain) NSMutableArray *images;
 
 @end
 
-@implementation FKSlideShowImageView
+@implementation YCSlideShowImageView
 
 /*!
  * @brief Animate an UIImageView with different images.

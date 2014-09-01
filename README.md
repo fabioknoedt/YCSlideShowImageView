@@ -1,4 +1,4 @@
-FKSlideShowImageView
+YCSlideShowImageView
 ====================
 
 A very simple subclass of UIImageView with the option to animate like a Slide Show between 2+ images.
@@ -12,7 +12,7 @@ MyExample.m
 
 	@interface MyExample ()
 
-	@property (nonatomic, weak) IBOutlet FKSlideShowImageView *imageView;
+	@property (nonatomic, weak) IBOutlet YCSlideShowImageView *imageView;
 
 	@end
 
