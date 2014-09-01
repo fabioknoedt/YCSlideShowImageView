@@ -1,5 +1,5 @@
 //
-//  YCSlideShowView.h
+//  FKSlideShowView.h
 //  YU - YUPPIU
 //
 //  Created by Fabio Knoedt on 11/08/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YCSlideShowImageView : UIImageView
+@interface FKSlideShowImageView : UIImageView
 
 /*!
  * @brief Animate an UIImageView with different images.
