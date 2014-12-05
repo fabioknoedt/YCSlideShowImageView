@@ -21,4 +21,10 @@
  */
 - (void)emptyImageArray;
 
+/*!
+ * @brief Animation duration
+ */
+@property (nonatomic, assign) CGFloat animationDuration;
+@property (nonatomic, assign) CGFloat animationDelay;
+
 @end
