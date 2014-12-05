@@ -44,6 +44,11 @@ MyExample.m
 If you want to reset the animation, just call:
 
 	[_imageView emptyImageArray];
+	
+There are 2 public properties that you can use to customize the animation duration (animationDuration) and the delay between the transitions (animationDelay).
+
+	CGFloat animationDuration;
+	CGFloat animationDelay;
 
 Support
 ------------	
