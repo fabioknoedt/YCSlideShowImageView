@@ -34,6 +34,6 @@
 /*!
  *  @brief  Public property for animation options (transition effects).
  */
-@property (nonatomic, assign) CGFloat animationOptions;
+@property (nonatomic, assign) UIViewAnimationOptions animationOptions;
 
 @end
