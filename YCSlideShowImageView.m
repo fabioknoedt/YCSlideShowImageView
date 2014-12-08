@@ -16,14 +16,61 @@
 
 @implementation YCSlideShowImageView
 
-- (id)init
+/*!
+ *  @brief  Init method for object.
+ *  @return The initialized object.
+ */
+- (id)init;
 {
-    if (self = [super init])  {
-        self.animationDuration = 1.0f;
-        self.animationDelay = 2.5f;
+    if ((self = [super init]))
+    {
+        /// Initializes the default values.
+        [self initDefaultValues];
     }
-    
     return self;
+}
+
+/*!
+ *  @brief  Init method for object.
+ *  @return The initialized object.
+ */
+- (id)initWithCoder:(NSCoder *)aDecoder;
+{
+    if ((self = [super initWithCoder:aDecoder]))
+    {
+        /// Initializes the default values.
+        [self initDefaultValues];
+    }
+    return self;
+}
+
+/*!
+ *  @brief  Init method for object.
+ *  @return The initialized object.
+ */
+- (id)initWithFrame:(CGRect)frame;
+{
+    if ((self = [super initWithFrame:frame]))
+    {
+        /// Initializes the default values.
+        [self initDefaultValues];
+    }
+    return self;
+}
+
+/*!
+ *  @brief  Initializes the default values.
+ */
+- (void)initDefaultValues;
+{
+    /// Public property for animation duration.
+    _animationDurationTime = 1.0f;
+    
+    /// Public property for animation delay.
+    _animationDelay = 2.5f;
+    
+    /// Public property for animation options (transition effects).
+    _animationOptions = UIViewAnimationOptionTransitionCrossDissolve;
 }
 
 /*!
@@ -68,7 +115,7 @@
     index = (index >= [_images count]) ? 0 : index;
     
     /// Animate with CrossDissolve effect.
-    [UIView transitionWithView:self duration:self.animationDuration options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    [UIView transitionWithView:self duration:_animationDurationTime options:_animationOptions animations:^{
         
         /// Set the next image.
         [self performSelectorOnMainThread:@selector(setImage:) withObject:_images[index] waitUntilDone:NO];
@@ -76,7 +123,7 @@
     } completion:^(BOOL finished) {
         
         /// Call after some delay.
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, self.animationDelay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, _animationDelay * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             
             /// If we still have images, we recursively call the method again.
             if (_images && [_images count]) {

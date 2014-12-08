@@ -22,9 +22,18 @@
 - (void)emptyImageArray;
 
 /*!
- * @brief Animation duration
+ * @brief Public property for animation duration.
  */
-@property (nonatomic, assign) CGFloat animationDuration;
+@property (nonatomic, assign) CGFloat animationDurationTime;
+
+/*!
+ *  @brief  Public property for animation delay.
+ */
 @property (nonatomic, assign) CGFloat animationDelay;
+
+/*!
+ *  @brief  Public property for animation options (transition effects).
+ */
+@property (nonatomic, assign) CGFloat animationOptions;
 
 @end
