@@ -45,10 +45,12 @@ If you want to reset the animation, just call:
 
 	[_imageView emptyImageArray];
 	
-There are 2 public properties that you can use to customize the animation duration (animationDuration) and the delay between the transitions (animationDelay).
+There are 3 public properties that you can use to customize the animation duration (animationDurationTime), the delay between the transitions (animationDelay) and also the options of the animation (animationOptions).
 
-	CGFloat animationDuration;
+	CGFloat animationDurationTime;
 	CGFloat animationDelay;
+	UIViewAnimationOptions animationOptions;
+	
 
 Support
 ------------	
