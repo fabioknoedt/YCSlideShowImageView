@@ -1,5 +1,9 @@
 YCSlideShowImageView
 ====================
+[![Pod Version](http://img.shields.io/cocoapods/v/YCSlideShowImageView.svg?style=flat)](http://cocoadocs.org/docsets/YCSlideShowImageView/)
+[![Pod Platform](http://img.shields.io/cocoapods/p/YCSlideShowImageView.svg?style=flat)](http://cocoadocs.org/docsets/YCSlideShowImageView/)
+[![Pod License](http://img.shields.io/cocoapods/l/YCSlideShowImageView.svg?style=flat)](https://github.com/yuppiu/YCSlideShowImageView/blob/master/LICENSE)
+[![Dependency Status](https://www.versioneye.com/objective-c/YCSlideShowImageView/1.1.1/badge.svg?style=flat)](https://www.versioneye.com/objective-c/YCSlideShowImageView)
 
 A very simple subclass of UIImageView with the option to animate like a Slide Show between 2+ images.
 
