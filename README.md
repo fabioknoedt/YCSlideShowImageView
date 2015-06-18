@@ -64,5 +64,6 @@ Runs fine in iOS6+ and supports ARC.
 Contributors
 ------------
 
+<img align="right" style="float: right" src="https://travis-ci.com/img/made-in-berlin-badge.png" alt="Made in Berlin" />
 * [Fabio Knoedt](https://github.com/fabioknoedt)
 * Rubén Xifré
